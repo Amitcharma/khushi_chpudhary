@@ -1,0 +1,95 @@
+
+#cars{
+  border-style: none;
+  background-color:white;
+ 
+}
+
+.input-lgs{
+  font-size: 18pt; 
+  height: 50px;  
+}
+.input-btns{
+  font-size: 11pt; 
+  height: 40px;  
+}
+
+form .option {
+  color: #5a5a5a;
+  margin: 10px 0;
+  font-weight: bold;
+  position: relative;
+}
+form .option:before {
+  position: absolute;
+  content: "";
+  width: 37%;
+  height: 2px;
+  background: #b6b6b6;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px;
+}
+form .option:after {
+  position: absolute;
+  content: "";
+  width: 37%;
+  height: 2px;
+  background: #b6b6b6;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50px;
+}
+
+.fblink {
+  margin-top: 15px;
+  width: 100%;
+}
+.fblink span {
+  font-size: 18px;
+  color: #021897;
+  margin-right: 5px;
+}
+.fblink a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #021897;
+}
+
+form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+form input {
+  margin-bottom: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  outline: none;
+}
+form input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  background: #efefef;
+}
+input[type="text"],
+input[type="password"] {
+  padding-left: 10px;
+  position: relative;
+  height: 35px;
+  font-size: 17px;
+}
+input::placeholder {
+  font-weight: normal;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+input:focus::placeholder {
+  position: absolute;
+  font-size: 10px;
+  transform: translateY(-13px);
+}
